@@ -6,7 +6,7 @@
     <parent>
         <artifactId>oss-parent</artifactId>
         <groupId>org.sonatype.oss</groupId>
-        <version>9</version>
+        <version>6</version>
     </parent>
 
     <prerequisites>
@@ -16,17 +16,21 @@
     <groupId>com.lazerycode.jmeter</groupId>
     <artifactId>jmeter-maven-plugin</artifactId>
     <version>${revision}</version>
-    <packaging>maven-plugin</packaging>
+    <packaging>pom</packaging>
 
     <name>JMeter Maven Plugin</name>
     <description>A plugin to allow you to run Apache JMeter tests with Maven.</description>
     <url>https://jmeter.lazerycode.com</url>
 
+    <modules>
+       <module>sub1</module>
+    </modules>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <required.maven.version>3.9.0</required.maven.version>
-        <revision>DEV-SNAPSHOT</revision>
+        <revision>3.6.0-SNAPSHOT</revision>
         <supported.java.version>1.8</supported.java.version>
 
         <!--Dependency versions-->
